@@ -22,8 +22,10 @@ body {
     text-align: center;
     border: 2px solid #EE3661;;
     background-color: #04D197;
+    transition: background-color 0.2s ease-in-out;
 }
 
 #grid-container > .myCell.active {
     background-color: #EE3661;
+    transition: all 0.2s ease-in-out;
 }

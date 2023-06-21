@@ -11,6 +11,10 @@ body {
     background-repeat: no-repeat;
 }
 
+h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
 #grid-container {
     display: flex;
     justify-content: center;

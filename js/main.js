@@ -18,6 +18,10 @@ function selectDifficulty(difficulty) {
             return;
     }
 
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+
     for (let i = 1; i <= gridSize; i++) {
         const mySquare = document.createElement('div');
         mySquare.classList.add('myCell')

@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "general.css";
+@import url('https://fonts.cdnfonts.com/css/pixeloid-sans');
 
 /* MAIN */
 
@@ -23,7 +24,7 @@ body {
     height: 100px;
     line-height: 100px;
     text-align: center;
-    border: 2px solid #EE3661;;
+    border: 5px solid #EE3661;;
     background-color: #04D197;
     transition: background-color 0.2s ease-in-out;
 }

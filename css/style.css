@@ -23,3 +23,7 @@ body {
     border: 2px solid #EE3661;;
     background-color: #04D197;
 }
+
+#grid-container > .myCell.active {
+    background-color: #EE3661;
+}

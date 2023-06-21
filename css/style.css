@@ -24,12 +24,12 @@ body {
     height: 100px;
     line-height: 100px;
     text-align: center;
-    border: 5px solid #EE3661;;
-    background-color: #04D197;
+    border: 5px solid #8294C4;;
+    background-color: #FFEAD2;
     transition: background-color 0.2s ease-in-out;
 }
 
 #grid-container > .myCell.active {
-    background-color: #EE3661;
+    background-color: #ACB1D6;
     transition: all 0.2s ease-in-out;
 }

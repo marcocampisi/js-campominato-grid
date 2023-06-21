@@ -33,3 +33,11 @@ body {
     background-color: #ACB1D6;
     transition: all 0.2s ease-in-out;
 }
+
+#easyButton,
+#normalButton,
+#hardButton {
+    padding: 10px;
+    background-color: #ACB1D6;
+    border: 2px solid #8294C4;
+}

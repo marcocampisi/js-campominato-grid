@@ -1,5 +1,21 @@
 const gridContainer = document.querySelector('#grid-container');
 
+const easyButton = document.querySelector('#easyButton');
+const normalButton = document.querySelector('#normalButton');
+const hardButton = document.querySelector('#hardButton');
+
+easyButton.addEventListener('click', function() {
+    selectDifficulty('facile');
+});
+
+normalButton.addEventListener('click', function() {
+    selectDifficulty('normale');
+});
+
+hardButton.addEventListener('click', function() {
+    selectDifficulty('difficile');
+});
+
 function selectDifficulty(difficulty) {
     let gridSize;
 

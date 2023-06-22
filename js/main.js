@@ -18,16 +18,20 @@ hardButton.addEventListener('click', function() {
 
 function selectDifficulty(difficulty) {
     let gridSize;
+    let cellNumber;
 
     switch (difficulty) {
         case 'facile':
             gridSize = 100;
+            cellNumber = 'myCell-easy';
             break;
         case 'normale':
             gridSize = 81;
+            cellNumber = 'myCell-normal';
             break;
         case 'difficile':
             gridSize = 49;
+            cellNumber = 'myCell-hard';
             break;
         default:
             console.log('Difficoltà non valida');
@@ -40,7 +44,7 @@ function selectDifficulty(difficulty) {
 
     for (let i = 1; i <= gridSize; i++) {
         const mySquare = document.createElement('div');
-        mySquare.classList.add('myCell')
+        mySquare.classList.add('myCell', cellNumber);
         mySquare.append(i);
         mySquare.addEventListener('click', function() {
             this.classList.toggle('active');

@@ -21,6 +21,7 @@ main .row {
 }
 
 #grid-container {
+    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,15 +29,29 @@ main .row {
 }
 
 #grid-container > .myCell {
-    margin: 10px;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
     text-align: center;
-    border: 5px solid #8294C4;;
+    border: 2px solid #8294C4;
     background-color: #FFEAD2;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
+}
+
+#grid-container > .myCell.myCell-easy {
+    width: calc(1000px / 10);
+    height: calc(1000px / 10);
+    line-height: calc(1000px / 10);
+}
+
+#grid-container > .myCell.myCell-normal {
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+    line-height: calc(1000px / 9);
+}
+
+#grid-container > .myCell.myCell-hard {
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
+    line-height: calc(1000px / 7);
 }
 
 #grid-container > .myCell.active {
